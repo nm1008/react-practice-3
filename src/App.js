@@ -3,6 +3,7 @@ import Bill from "./Bill";
 import Tip from "./Tip";
 import FriendTip from "./FriendTip";
 import Total from "./Total";
+import { Reset } from "./Reset";
 
 function App() {
   const [bill, setBill] = useState(0);
@@ -15,6 +16,7 @@ function App() {
       <Tip setTip={setTip} />
       <FriendTip setFriendTip={setFriendTip} />
       <Total bill={bill} tip={tip} friendTip={friendTip} />
+      <Reset setBill={setBill} setTip={setTip} setFriendTip={setFriendTip} />
     </div>
   );
 }
